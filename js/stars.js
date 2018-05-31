@@ -17,3 +17,10 @@ $(document).ready(function(){
     })
   })
 })
+
+
+function showContact() {
+    document.getElementById("github-box").classList.add("contact-box-select-github")
+    document.getElementById("email-box").classList.add("contact-box-select-github")
+    document.getElementById("phone-box").classList.add("contact-box-select-github")
+}

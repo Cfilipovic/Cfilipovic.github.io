@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 body{
   background:radial-gradient(200% 100% at bottom center,#F7F7B6,#E96F92,#75517D,#1B2947);
   background:radial-gradient(220% 105% at top center,#1B2947 10%,#75517D 40%,#E96F92 65%,#F7F7B6);
@@ -102,9 +100,12 @@ body{
   border-radius: 2%;
 }
 
+.contact-box a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
 
 .contact-box:hover {
-  cursor: pointer;
   -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.2);
     -ms-transition: all 200ms ease-in;
@@ -127,8 +128,53 @@ body{
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.2);
     transition: all 200ms ease-in;
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
+
+.contact-box-select-github {
+    animation: contact-box-size-increase 500ms ease-in-out 1 normal;
+    -webkit-animation: contact-box-size-increase 500ms ease-in-out 1 normal;
+    color: #FFFFFF;
+}
+
+.contact-box-select-github .contact-box__title {
+    font-size: 2.5rem;
+}
+
+.contact-box-select-email {
+    animation: contact-box-size-increase 500ms ease-in-out 1s 1 normal;
+    -webkit-animation: contact-box-size-increase 500ms ease-in-out 1s 1 normal;
+    color: #FFFFFF;
+}
+
+.contact-box-select-email .contact-box__title {
+    font-size: 2.5rem;
+}
+
+.contact-box-select-phone {
+    animation: contact-box-size-increase 500ms ease-in-out 1000ms 1 normal;
+    -webkit-animation: contact-box-size-increase 500ms ease-in-out 1000ms 1 normal;
+    color: #FFFFFF;
+}
+
+.contact-box-select-phone .contact-box__title {
+    font-size: 2.5rem;
+}
+
+@keyframes contact-box-size-increase {
+        0% {
+            transform: scale(1.0);
+            -webkit-transform: scale(1.0);
+        }
+        50% {
+            transform: scale(1.3);
+            -webkit-transform: scale(1.3);
+        }
+        100% {
+            transform: scale(1.0);
+            -webkit-transform: scale(1.0);
+        }
+    }
 
 .contact-box__info {
   padding: 0px;
@@ -189,9 +235,11 @@ body{
 }
 .contact-box--green:hover {
   color: white;
+  cursor: default;
 }
 .contact-box--green:hover a {
   color: white;
+  cursor: default;
 }
 
 .ico-hours {
