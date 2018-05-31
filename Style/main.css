@@ -4,7 +4,6 @@ body{
   background:radial-gradient(200% 100% at bottom center,#F7F7B6,#E96F92,#75517D,#1B2947);
   background:radial-gradient(220% 105% at top center,#1B2947 10%,#75517D 40%,#E96F92 65%,#F7F7B6);
   background-attachment:fixed;
-  overflow:hidden;
 }
 @keyframes rotate{
   0%{
@@ -36,16 +35,10 @@ body{
   backface-visibility:hidden;
 }
 
-.page-container {
-  position: relative;
-  padding-bottom: 5%;
-}
-
 .link {
   font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
   text-decoration: none;
   list-style-type: none;
-  padding: 1em;
 }
 
 .link:hover {
@@ -76,7 +69,6 @@ body{
 	font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
   color: #00E5FF;
   text-transform: uppercase;
-  margin-top:  10px;
   letter-spacing: .2em;
   font-size: 45px;
   line-height: 1.4;
@@ -93,10 +85,6 @@ body{
   font-weight: bold;
 }
 
-.small-title span {
-		margin-right: 10px;
-}
-
 .profile-img {
   border-radius: 50%;
 }
@@ -111,9 +99,6 @@ body{
   display: inline-block;
   border: 2px solid transparent;
   text-align: center;
-  padding: 2rem;
-  width: 20rem;
-  height: 12rem;
   border-radius: 2%;
 }
 
@@ -188,16 +173,6 @@ body{
 }
 .contact-box--orange .contact-box__title {
   color: inherit;
-}
-.contact-box--orange:before {
-  background-color: #f49263;
-  border: 1px solid #f49263;
-}
-.contact-box--orange:hover {
-  color: white;
-}
-.contact-box--orange:hover a {
-  color: white;
 }
 
 .contact-box--green {
