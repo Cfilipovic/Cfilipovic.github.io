@@ -20,7 +20,15 @@ $(document).ready(function(){
 
 
 function showContact() {
-    document.getElementById("github-box").classList.add("contact-box-select-github")
-    document.getElementById("email-box").classList.add("contact-box-select-github")
-    document.getElementById("phone-box").classList.add("contact-box-select-github")
+  $("#github-box").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+    $(this).removeClass("contact-box-select-github");
+  }).addClass("contact-box-select-github");
+
+  $("#phone-box").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+    $(this).removeClass("contact-box-select-github");
+  }).addClass("contact-box-select-github");
+
+  $("#email-box").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+    $(this).removeClass("contact-box-select-github");
+  }).addClass("contact-box-select-github");
 }

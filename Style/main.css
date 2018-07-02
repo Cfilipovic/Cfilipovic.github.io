@@ -1,8 +1,21 @@
-body{
+body {
   background:radial-gradient(200% 100% at bottom center,#F7F7B6,#E96F92,#75517D,#1B2947);
   background:radial-gradient(220% 105% at top center,#1B2947 10%,#75517D 40%,#E96F92 65%,#F7F7B6);
   background-attachment:fixed;
+  width: 100%;
+  overflow: hidden;
 }
+
+@media (max-width: 767px) {
+  body {
+    overflow: auto;
+  }
+}
+
+.star-background {
+  overflow: hidden;
+}
+
 @keyframes rotate{
   0%{
     transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
@@ -21,10 +34,10 @@ body{
   animation:rotate 90s infinite linear;
 }
 .star{
-  width:2px;
-  height:2px;
+  width:0.1rem;
+  height:0.1rem;
   background:#F7F7B6;
-  //border-radius:100%;
+  border-radius:100%;
   position:absolute;
   top:0;
   left:0;
@@ -42,23 +55,49 @@ body{
 .link:hover {
   text-decoration: none;
   -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.1);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.1);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.1);
-    transition: all 200ms ease-in;
-    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.1);
+  transition: all 200ms ease-in;
+  transform: scale(1.1);
   color: #00E5FF;
 }
 
 .link a {
-    color: #ffeddb;
-    font-weight: bold;
-    font-size: 2em;
+  color: #ffeddb;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.link button {
+  color: #ffeddb;
+  font-weight: bold;
+  font-size: 2em;
+  background-color: rgba(0,0,0,0);
+  border-style: none;
+  box-sizing: content-box;
+  cursor: pointer;
+  display: inline;
+  height: auto;
+  padding: 0;
+  perspective-origin: 0 0;
+  text-align: start;
+  transform-origin: 0 0;
+  width: auto;
+  -moz-appearance: none;
+  -webkit-logical-height: 1em; /* Chrome ignores auto, so we have to use this hack to set the correct height  */
+  -webkit-logical-width: auto; /* Chrome ignores auto, but here for completeness */
+  
 }
 
 .link a:hover {
+  color: #00E5FF;
+  text-decoration: none;
+}
+
+.link button:hover {
   color: #00E5FF;
   text-decoration: none;
 }
@@ -67,8 +106,8 @@ body{
 	font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
   color: #00E5FF;
   text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: 45px;
+  letter-spacing: .2rem;
+  font-size: 4rem;
   line-height: 1.4;
   font-weight: bold;
 }
@@ -77,10 +116,20 @@ body{
 	font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
 	color: #FFF59D;
   text-transform: uppercase;
-  letter-spacing: .05em;
-  font-size: 30px;
+  letter-spacing: .05rem;
+  font-size: 2rem;
   line-height: 1.4;
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .big-title {
+    font-size: 2.5rem;
+  }
+
+  .small-title {
+    font-size: 1.5 rem;
+  }
 }
 
 .profile-img {
@@ -107,13 +156,13 @@ body{
 
 .contact-box:hover {
   -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.2);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.2);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.2);
-    transition: all 200ms ease-in;
-    color: #FFFFFF;
+  -webkit-transform: scale(1.2);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.2);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.2);
+  transition: all 200ms ease-in;
+  color: #FFFFFF;
 }
 
 .contact-box__title {
@@ -121,64 +170,76 @@ body{
 }
 
 .contact-box:hover .contact-box__title {
-  -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.2);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.2);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.2);
-    transition: all 200ms ease-in;
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .contact-box-select-github {
-    animation: contact-box-size-increase 500ms ease-in-out 1 normal;
-    -webkit-animation: contact-box-size-increase 500ms ease-in-out 1 normal;
-    color: #FFFFFF;
+  animation-name: contact-box-size-increase;
+  animation-duration: 2000ms;
 }
 
 .contact-box-select-github .contact-box__title {
-    font-size: 2.5rem;
+  animation-name: contact-box-title-size-increase;
+  animation-duration: 2000ms;
 }
 
-.contact-box-select-email {
-    animation: contact-box-size-increase 500ms ease-in-out 1s 1 normal;
-    -webkit-animation: contact-box-size-increase 500ms ease-in-out 1s 1 normal;
-    color: #FFFFFF;
+.contact-box-select-github .ico-hours {
+  animation-name: contact-box-icon-size-increase;
+  animation-duration: 2000ms;
 }
 
-.contact-box-select-email .contact-box__title {
-    font-size: 2.5rem;
+.contact-box-select-github .ico-envelope {
+  animation-name: contact-box-icon-size-increase;
+  animation-duration: 2000ms;
 }
 
-.contact-box-select-phone {
-    animation: contact-box-size-increase 500ms ease-in-out 1000ms 1 normal;
-    -webkit-animation: contact-box-size-increase 500ms ease-in-out 1000ms 1 normal;
-    color: #FFFFFF;
-}
-
-.contact-box-select-phone .contact-box__title {
-    font-size: 2.5rem;
+.contact-box-select-github .ico-phone {
+  animation-name: contact-box-icon-size-increase;
+  animation-duration: 2000ms;
 }
 
 @keyframes contact-box-size-increase {
-        0% {
-            transform: scale(1.0);
-            -webkit-transform: scale(1.0);
-        }
-        50% {
-            transform: scale(1.3);
-            -webkit-transform: scale(1.3);
-        }
-        100% {
-            transform: scale(1.0);
-            -webkit-transform: scale(1.0);
-        }
-    }
+  0% {
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes contact-box-title-size-increase {
+  0% {
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+}
+
+@keyframes contact-box-icon-size-increase {
+  0% {
+  }
+  50% {
+    color: rgb(0, 0, 0);
+  }
+}
 
 .contact-box__info {
-  padding: 0px;
-  margin: 0px;
+  padding: 0rem;
+  margin: 0rem;
 }
 
 .contact-box__info a {

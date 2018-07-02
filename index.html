@@ -16,103 +16,188 @@
 	</head>
 
 	<body>
-		<div class="stars">
+		<div class="container star-background">
+			<div class="stars">
+			</div>
 		</div>
 
 		<div>
 			<div class="container">
-				<div class="row align-items-center text-center">
+				<!-- Desktop nav bar -->
+				<div class="d-none d-md-inline d-md-inline d-print-inline-block ">
+					<div class="row align-items-center text-center mb-5 pb-5">
 						<div class="col-sm-4">
 							<div class="link p-2">
-									<a href="#home">Home</a>
+								<button onclick="location.href='#home'">Home</button>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="link p-2">
-									<a href="#portfolio">Portfolio</a>
+								<button onclick="location.href='portfolio.html'">Portfolio</button>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="link p-2">
-									<a href="" onclick="showContact()">Contact</a>
+								<button onclick="showContact()">Contact</button>
 							</div>
 						</div>
+					</div>
 				</div>
 
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
-			</br>
+				<!-- Mobile nav bar -->
+				<div class="d-md-none mb-2 pb-2">
+					<div class="row align-items-center text-center">
+						<div class="col-sm-4">
+							<div class="link p-2">
+								<button onclick="location.href='#home'">Home</button>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="link p-2">
+								<button onclick="location.href='portfolio.html'">Portfolio</button>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="link p-2">
+								<button onclick="showContact()">Contact</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
-
-			<div class="row align-items-center">
-					<div class="col center-block text-center">
+				<!-- Desktop image and title content -->
+				<div class="d-none d-md-inline d-md-inline d-print-inline-block mb-5 pb-5">
+					<div class="row align-items-center">
+						<div class="col center-block text-center">
 							<img class="img-responsive center-block rounded-circle" src="media/profile.jpg"/>
-					</div>
-			</div>
-				<div class="row align-items-center">
-					<div class="col-12 title text-center">
-						<h1 class="big-title mt-2">
-							<span class="title-center-left">Connor</span>
-							<span class="title-center-right">Filipovic</span>
-						</h1>
-					</div>
-				</div>
-				<div class="row align-items-center">
-					<div class="col-12 title text-center">
-						<h3 class="small-title">
-							<span class="title-center-left">Innovative</span>
-							<span class="title-center-right">Developer</span>
-						</h3>
-					</div>
-				</div>
-
-
-			</br>
-			</br>
-
-				<div class="row align-items-center text-center mt-5 pt-5">
-					<div class="col-sm">
-						<div id="github-box" class="contact-box contact-box--teal p-4 w-75 h-5 mb-5">
-							<a href="http://github.com/Cfilipovic">
-								<div class="ico-hours">
-								  <i class="fab fa-github"></i>
-								</div>
-								<h4 class="contact-box__title">Github</h4>
-								<p class="contact-box__info">github.com/Cfilipovic</p>
-							</a>
 						</div>
 					</div>
-					<div class="col-sm">
-						<div id="email-box" class="contact-box contact-box--orange p-4 w-75 h-5 mb-5">
-							<a href="mailto:Business@ConnorFilipovic.com">
-								<div class="ico-envelope">
-								  <i class="fas fa-envelope"></i>
-								</div>
-								<h4 class="contact-box__title">Email</h4>
-								<p class="contact-box__info">Business@ConnorFilipovic.com</p>
-							</a>
+					<div class="row align-items-center">
+						<div class="col-12 title text-center">
+							<h1 class="big-title mt-2">
+								<span class="title-center-left">Connor</span>
+								<span class="title-center-right">Filipovic</span>
+							</h1>
 						</div>
 					</div>
-					<div class="col-sm">
-						<div id="phone-box" class="contact-box contact-box--green p-4 w-75 h-5 mb-5">
-							<a href="tel:+1-615-594-0403">
-								<div class="ico-phone">
-								  <i class="fas fa-phone"></i>
-								</div>
-								<h4 class="contact-box__title">Phone</h4>
-								<p class="contact-box__info">615-594-0403</p>
-							</a>
+					<div class="row align-items-center">
+						<div class="col-12 title text-center">
+							<h3 class="small-title">
+								<span class="title-center-left">Innovative</span>
+								<span class="title-center-right">Developer</span>
+							</h3>
 						</div>
 					</div>
 				</div>
+
+				<!-- Mobile Image and title content -->
+				<div class="d-md-none">
+					<div class="row align-items-center">
+						<div class="col center-block text-center">
+							<img class="img-responsive center-block rounded-circle" src="media/profile.jpg"/>
+						</div>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-12 title text-center">
+							<h1 class="big-title mt-2">
+								<span class="title-center-left">Connor</span>
+								<span class="title-center-right">Filipovic</span>
+							</h1>
+						</div>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-12 title text-center">
+							<h3 class="small-title">
+								<span class="title-center-left">Innovative</span>
+								<span class="title-center-right">Developer</span>
+							</h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Desktop links -->
+				<div class="d-none d-md-inline d-md-inline d-print-inline-block ">
+					<div class="row align-items-center text-center mt-5 pt-5">
+						<div class="col-sm">
+							<div id="github-box" class="contact-box contact-box--teal p-4 w-75 h-5 mb-5">
+								<a href="http://github.com/Cfilipovic">
+									<div class="ico-hours">
+									<i class="fab fa-github"></i>
+									</div>
+									<h4 class="contact-box__title">Github</h4>
+									<p class="contact-box__info">github.com/Cfilipovic</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div id="email-box" class="contact-box contact-box--orange p-4 w-75 h-5 mb-5">
+								<a href="mailto:Business@ConnorFilipovic.com">
+									<div class="ico-envelope">
+									<i class="fas fa-envelope"></i>
+									</div>
+									<h4 class="contact-box__title">Email</h4>
+									<p class="contact-box__info">Business@ConnorFilipovic.com</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div id="phone-box" class="contact-box contact-box--green p-4 w-75 h-5 mb-5">
+								<a href="tel:+1-615-594-0403">
+									<div class="ico-phone">
+									<i class="fas fa-phone"></i>
+									</div>
+									<h4 class="contact-box__title">Phone</h4>
+									<p class="contact-box__info">615-594-0403</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Mobile links -->
+				<div class="d-md-none">
+					<div class="row align-items-center text-center mt-2">
+						<div class="col-sm">
+							<div id="github-box" class="contact-box contact-box--teal mx-auto px-auto w-75 h-5 mb-2">
+								<a href="http://github.com/Cfilipovic">
+									<div class="ico-hours">
+										<i class="fab fa-github"></i>
+									</div>
+									<h4 class="contact-box__title">Github</h4>
+									<p class="contact-box__info">github.com/Cfilipovic</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div id="email-box" class="contact-box contact-box--orange mx-auto px-auto w-75 h-5 mb-2">
+								<a href="mailto:Business@ConnorFilipovic.com">
+									<div class="ico-envelope">
+										<i class="fas fa-envelope"></i>
+									</div>
+									<h4 class="contact-box__title">Email</h4>
+									<p class="contact-box__info">Business@ConnorFilipovic.com</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div id="phone-box" class="contact-box contact-box--green mx-auto px-auto w-75 h-5 mb-2">
+								<a href="tel:+1-615-594-0403">
+									<div class="ico-phone">
+										<i class="fas fa-phone"></i>
+									</div>
+									<h4 class="contact-box__title">Phone</h4>
+									<p class="contact-box__info">615-594-0403</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</body>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </html>
