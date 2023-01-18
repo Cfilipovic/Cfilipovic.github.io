@@ -143,38 +143,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <div>
-            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
-          </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Image src={web1} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web2} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web3} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web4} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web5} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web6} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web7} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web8} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-            </div>
-          </div>
-        </section>
-
         <section className="bg-white dark:bg-gray-900">
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Reach Out To Me And Let's Talk</h2>
