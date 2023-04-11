@@ -15,6 +15,7 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import web7 from "../public/web7.png";
 import web8 from "../public/web8.png";
+import garagesail from "../public/garagesail.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -116,6 +117,9 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1">
+              <Image src={garagesail} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+            </div>
             <div className="basis-1/3 flex-1">
               <Image src={web1} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
             </div>
