@@ -123,77 +123,37 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/us/app/petmatch/id6449750651">
-                <ModalImage
-                  small={"petmatch.png"}
-                  large={"petmatch.png"}
-                  alt="PetMatch"
-                />
+                <Image src={petmatch} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
               </a>
             </div>
             <div className="basis-1/3 flex-1">
               <a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/us/app/garage-sail/id1670017065">
-                <ModalImage
-                  small={"garagesail.png"}
-                  large={"garagesail.png"}
-                  alt="GarageSail"
-                />
+                <Image src={garagesail} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
               </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <ModalImage
-                small={"web1.png"}
-                large={"web1.png"}
-                alt="Visualize"
-              />
+              <Image src={web1} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
             </div>
             <div className="basis-1/3 flex-1">
-              <ModalImage
-                small={"web2.png"}
-                large={"web2.png"}
-                alt="Powerful Features"
-              />
+              <Image src={web2} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
             </div>
             <div className="basis-1/3 flex-1">
-              <ModalImage
-                small={"web3.png"}
-                large={"web3.png"}
-                alt="Movies"
-              />
+              <Image src={web3} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
             </div>
             <div className="basis-1/3 flex-1">
-              <ModalImage
-                small={"web4.png"}
-                large={"web4.png"}
-                alt="Flight"
-              />
+              <Image src={web4} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
             </div>
             <div className="basis-1/3 flex-1">
-              <ModalImage
-                small={"web5.png"}
-                large={"web5.png"}
-                alt="Health"
-              />
+              <Image src={web5} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
             </div>
             <div className="basis-1/3 flex-1">
-              <ModalImage
-                small={"web6.png"}
-                large={"web6.png"}
-                alt="Order"
-              />
+              <Image src={web6} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
             </div>
             <div className="basis-1/3 flex-1">
-              <ModalImage
-                small={"web7.png"}
-                large={"web7.png"}
-                alt="Train"
-              />
+              <Image src={web7} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
             </div>
             <div className="basis-1/3 flex-1">
-              <ModalImage
-                small={"web8.png"}
-                large={"web8.png"}
-                alt="Dance"
-              />
+              <Image src={web8} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
             </div>
           </div>
         </section>
