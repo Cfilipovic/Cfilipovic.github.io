@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillGithub } from "react-icons/ai";
+import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillGithub, AiFillApple } from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/headshot.jpeg";
 // import design from "../public/design.png";
@@ -19,8 +19,11 @@ import garagesail from "../public/garagesail.png";
 import petmatch from "../public/petmatch.png";
 import { useState } from "react";
 
+import ModalImage from "react-modal-image";
+
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -32,7 +35,7 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white">developedbycon</h1>
+            <h1 className="text-xl font-burtons dark:text-white">codedbycon</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill onClick ={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/>
@@ -49,8 +52,9 @@ export default function Home() {
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-100">
             {/* <AiFillTwitterCircle /> */}
-            <a href="https://github.com/Cfilipovic"><AiFillGithub /></a>
-            <a href="https://www.linkedin.com/in/connorfilipovic/"><AiFillLinkedin /></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Cfilipovic"><AiFillGithub /></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/connorfilipovic/"><AiFillLinkedin /></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/us/developer/connor-filipovic/id1670017337"><AiFillApple /></a>
             {/* <AiFillYoutube /> */}
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96">
@@ -76,12 +80,10 @@ export default function Home() {
                   Empower your business to succeed in today's mobile-first world with complete mobile software development services - from design to release - delivered by a skilled developer.
               </p>
               <h4 className="py-5 text-teal-600">Development Tools I Use</h4>
-              <p className="text-grapy-800 py-1">Adobe XD</p>
               <p className="text-grapy-800 py-1">XCode</p>
-              <p className="text-grapy-800 py-1">Swift</p>
-              <p className="text-grapy-800 py-1">Swift UI</p>
+              <p className="text-grapy-800 py-1">Swift - SwiftUI</p>
               <p className="text-grapy-800 py-1">Android Studio</p>
-              <p className="text-grapy-800 py-1">Kotlin</p>
+              <p className="text-grapy-800 py-1">Kotlin - Compose</p>
             </div>
 
             <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -95,6 +97,7 @@ export default function Home() {
               <p className="text-grapy-800 py-1">Photoshop</p>
               <p className="text-grapy-800 py-1">Adobe XD</p>
               <p className="text-grapy-800 py-1">Figma</p>
+              <p className="text-grapy-800 py-1">Good Old Pen & Paper</p>
             </div>
 
             <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-white flex-1">
@@ -118,35 +121,79 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-          <div className="basis-1/3 flex-1">
-              <Image src={petmatch} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/us/app/petmatch/id6449750651">
+                <ModalImage
+                  small={"petmatch.png"}
+                  large={"petmatch.png"}
+                  alt="PetMatch"
+                />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={garagesail} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/us/app/garage-sail/id1670017065">
+                <ModalImage
+                  small={"garagesail.png"}
+                  large={"garagesail.png"}
+                  alt="GarageSail"
+                />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web1} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <ModalImage
+                small={"web1.png"}
+                large={"web1.png"}
+                alt="Visualize"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web2} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <ModalImage
+                small={"web2.png"}
+                large={"web2.png"}
+                alt="Powerful Features"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web3} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <ModalImage
+                small={"web3.png"}
+                large={"web3.png"}
+                alt="Movies"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web4} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <ModalImage
+                small={"web4.png"}
+                large={"web4.png"}
+                alt="Flight"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web5} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <ModalImage
+                small={"web5.png"}
+                large={"web5.png"}
+                alt="Health"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web6} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <ModalImage
+                small={"web6.png"}
+                large={"web6.png"}
+                alt="Order"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web7} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <ModalImage
+                small={"web7.png"}
+                large={"web7.png"}
+                alt="Train"
+              />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web8} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <ModalImage
+                small={"web8.png"}
+                large={"web8.png"}
+                alt="Dance"
+              />
             </div>
           </div>
         </section>
