@@ -15,6 +15,9 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import web7 from "../public/web7.png";
 import web8 from "../public/web8.png";
+import web9 from "../public/web9.png";
+import web10 from "../public/web10.png";
+import web11 from "../public/web11.png";
 import garagesail from "../public/garagesail.png";
 import petmatch from "../public/petmatch.png";
 import { useState } from "react";
@@ -132,28 +135,62 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web1} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <a target="_blank" rel="noopener noreferrer" href="web9.png">
+                <Image src={web9} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web2} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <a target="_blank" rel="noopener noreferrer" href="web2.png">
+                <Image src={web2} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web3} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <a target="_blank" rel="noopener noreferrer" href="web3.png">
+                <Image src={web3} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web4} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <a target="_blank" rel="noopener noreferrer" href="web4.png">
+                <Image src={web4} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web5} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <a target="_blank" rel="noopener noreferrer" href="web5.png">
+                <Image src={web5} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web6} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <a target="_blank" rel="noopener noreferrer" href="web11.png">
+                <Image src={web11} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web7} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <a target="_blank" rel="noopener noreferrer" href="web7.png">
+                <Image src={web7} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image src={web8} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              <a target="_blank" rel="noopener noreferrer" href="web8.png">
+                <Image src={web8} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="web1.png">
+                <Image src={web1} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="web10.png">
+                <Image src={web10} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="web6.png">
+                <Image src={web6} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              
             </div>
           </div>
         </section>
