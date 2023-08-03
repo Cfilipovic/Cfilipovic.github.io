@@ -18,6 +18,7 @@ import web8 from "../public/web8.png";
 import web9 from "../public/web9.png";
 import web10 from "../public/web10.png";
 import web11 from "../public/web11.png";
+import crowdfunding from "../public/crowdfunding.png";
 import fileupload from "../public/file-upload.png";
 import garagesail from "../public/garagesail.png";
 import petmatch from "../public/petmatch.png";
@@ -193,6 +194,16 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <a target="_blank" rel="noopener noreferrer" href="file-upload.png">
                 <Image src={fileupload} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="crowdfunding.png">
+                <Image src={crowdfunding} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="crowdfunding.png">
+
               </a>
             </div>
           </div>
