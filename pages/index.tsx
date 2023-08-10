@@ -18,6 +18,7 @@ import web8 from "../public/web8.png";
 import web9 from "../public/web9.png";
 import web10 from "../public/web10.png";
 import web11 from "../public/web11.png";
+import carinterface from "../public/carinterface.png";
 import customize from "../public/customize.png";
 import crowdfunding from "../public/crowdfunding.png";
 import fileupload from "../public/file-upload.png";
@@ -205,6 +206,16 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <a target="_blank" rel="noopener noreferrer" href="customize.png">
                 <Image src={customize} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="carinterface.png">
+                <Image src={carinterface} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="customize.png">
+                
               </a>
             </div>
           </div>
