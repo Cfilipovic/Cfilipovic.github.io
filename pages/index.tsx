@@ -7,17 +7,18 @@ import deved from "../public/headshot.jpeg";
 import design from "../public/softwaredev.png";
 import code from "../public/uidesign.png";
 import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
-import web7 from "../public/web7.png";
-import web8 from "../public/web8.png";
-import web9 from "../public/web9.png";
-import web10 from "../public/web10.png";
-import web11 from "../public/web11.png";
+import visualize from "../public/visualize.png";
+import powerfulfeatures from "../public/powerfulfeatures.png";
+import movies from "../public/movies.png";
+import boardingpass from "../public/boardingpass.png";
+import dance from "../public/dance.png";
+import delivery from "../public/delivery.png";
+import fooddelivery from "../public/food-delivery.png";
+import health from "../public/health.png";
+import homeapp from "../public/home-app.png";
+import train from "../public/train.png";
+import yoga from "../public/yoga.png";
+import blogpost from "../public/blogpost.png";
 import carinterface from "../public/carinterface.png";
 import customize from "../public/customize.png";
 import crowdfunding from "../public/crowdfunding.png";
@@ -139,66 +140,6 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web9.png">
-                <Image src={web9} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web2.png">
-                <Image src={web2} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web3.png">
-                <Image src={web3} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web4.png">
-                <Image src={web4} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web5.png">
-                <Image src={web5} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web11.png">
-                <Image src={web11} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web7.png">
-                <Image src={web7} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web8.png">
-                <Image src={web8} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web1.png">
-                <Image src={web1} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web10.png">
-                <Image src={web10} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="web6.png">
-                <Image src={web6} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="file-upload.png">
-                <Image src={fileupload} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
               <a target="_blank" rel="noopener noreferrer" href="crowdfunding.png">
                 <Image src={crowdfunding} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
               </a>
@@ -214,8 +155,68 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <a target="_blank" rel="noopener noreferrer" href="customize.png">
-                
+              <a target="_blank" rel="noopener noreferrer" href="blogpost.png">
+                <Image src={blogpost} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="file-upload.png">
+                <Image src={fileupload} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="food-delivery.png">
+                <Image src={fooddelivery} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="powerfulfeatures.png">
+                <Image src={powerfulfeatures} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="movies.png">
+                <Image src={movies} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="yoga.png">
+                <Image src={yoga} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="train.png">
+                <Image src={train} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="dance.png">
+                <Image src={dance} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="boardingpass.png">
+                <Image src={boardingpass} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="visualize.png">
+                <Image src={visualize} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="home-app.png">
+                <Image src={homeapp} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="health.png">
+                <Image src={health} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="delivery.png">
+                <Image src={delivery} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
               </a>
             </div>
           </div>
