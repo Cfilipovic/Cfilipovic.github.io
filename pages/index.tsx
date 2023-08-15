@@ -25,6 +25,7 @@ import crowdfunding from "../public/crowdfunding.png";
 import fileupload from "../public/file-upload.png";
 import garagesail from "../public/garagesail.png";
 import petmatch from "../public/petmatch.png";
+import emicalculator from "../public/emicalculator.png";
 import { useState } from "react";
 
 import ModalImage from "react-modal-image";
@@ -190,6 +191,11 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="emicalculator.png">
+                <Image src={emicalculator} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
               <a target="_blank" rel="noopener noreferrer" href="dance.png">
                 <Image src={dance} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
               </a>
@@ -217,6 +223,11 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <a target="_blank" rel="noopener noreferrer" href="delivery.png">
                 <Image src={delivery} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="dance.png">
+
               </a>
             </div>
           </div>
