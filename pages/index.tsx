@@ -28,6 +28,7 @@ import petmatch from "../public/petmatch.png";
 import emicalculator from "../public/emicalculator.png";
 import weather from "../public/weather.png";
 import calendar from "../public/calendar.png";
+import testimonials from "../public/testimonials.png";
 import { useState } from "react";
 
 import ModalImage from "react-modal-image";
@@ -205,6 +206,11 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <a target="_blank" rel="noopener noreferrer" href="calendar.png">
                 <Image src={calendar} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <a target="_blank" rel="noopener noreferrer" href="testimonials.png">
+                <Image src={testimonials} alt="image" className="rounded-lg object-cover shadow-lg" width={100} height={100} layout="responsive"/>
               </a>
             </div>
             <div className="basis-1/3 flex-1">
